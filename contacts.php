@@ -68,7 +68,7 @@ $dom->formatOutput = true;
 // Создаём корневой <contacts> с group_name
 $contacts = $dom->createElement('contacts');
 $contacts->setAttribute('group_name', $group_name);
-$contacts->setAttribute('editable', '1');
+$contacts->setAttribute('editable', '0');
 $contacts->setAttribute('id', 'internal');
 $dom->appendChild($contacts);
 
