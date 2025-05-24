@@ -5,7 +5,7 @@ This PHP script automatically generates an XML phonebook file for Digium IP phon
 ## Features
 
 - Pulls user data from the Asterisk MySQL database
-- Excludes specific extensions and names via config files
+- Excludes specific extensions and names via config files, also exclude contacts which contain name *FREE* or *free*
 - Customizable contact group name (`config.ini`)
 - Automatically saves the resulting XML file to Digium's directory
 - Reloads Digium phone settings via Asterisk CLI
@@ -41,7 +41,7 @@ This project is licensed under the terms of the [GNU GPL v3](LICENSE).
 ## Возможности
 
 - Извлечение данных пользователей из MySQL-базы FreePBX
-- Исключение определённых внутренних номеров и имён через конфигурационные файлы
+- Исключение определённых внутренних номеров и имён через конфигурационные файлы, а также номеров с именем FREE
 - Поддержка кастомного имени группы контактов (`config.ini`)
 - Сохранение готового XML-файла в директорию Digium-телефонов
 - Автоматическая перезагрузка настроек телефонов через Asterisk CLI
@@ -59,6 +59,15 @@ This project is licensed under the terms of the [GNU GPL v3](LICENSE).
 - MySQL (используется в FreePBX)
 - Asterisk с модулем Digium Phones Addon
 - Веб-сервер с поддержкой PHP (например, Apache)
+
+## Запуск из консоли
+```
+php contacts.php
+```
+
+Также можно запускать по *cron*
+
+
 
 ## Лицензия
 
