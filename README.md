@@ -15,7 +15,7 @@ This PHP script automatically generates an XML phonebook file for Digium IP phon
 - `contacts.php` — main script
 - `config.ini` — optional custom group name
 - `exclude.ini` — optional list of extensions to exclude
-- `sarov-contacts.xml` — generated contact file
+- `all-contacts.xml` — generated contact file
 
 ## Requirements
 
@@ -51,7 +51,7 @@ This project is licensed under the terms of the [GNU GPL v3](LICENSE).
 - `contacts.php` — основной скрипт
 - `config.ini` — необязательное имя группы контактов
 - `exclude.ini` — список внутренних номеров для исключения
-- `sarov-contacts.xml` — сгенерированный файл с контактами
+- `all-contacts.xml` — сгенерированный файл с контактами
 
 ## Требования
 

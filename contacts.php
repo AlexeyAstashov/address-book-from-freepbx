@@ -106,7 +106,7 @@ foreach ($entries as $entry) {
 }
 
 // Сохраняем
-$xml_file = '/var/www/html/digium_phones/sarov-contacts.xml';
+$xml_file = '/var/www/html/digium_phones/all-contacts.xml';
 $dom->save($xml_file);
 
 echo "Файл создан: $xml_file (группа: $group_name)\n";
